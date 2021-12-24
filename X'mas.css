@@ -1,0 +1,442 @@
+/*画面の幅目一杯*/
+html {
+  height: 100%;
+}
+
+/*リンクの下線を消す*/
+a {
+  text-decoration: none;
+}
+
+/*index.htmlの背景画像*/
+body.transition {
+  background-image: url("../Picture/Xmas_login.gif"); /*背景画像*/
+  background-size: cover; /*画面サイズに併せて全画面表示*/
+  background-attachment: fixed; /*固定*/
+  background-position: center center; /*縦横中央*/
+  height: 100%; /*画面の横幅いっぱいに範囲選択*/
+  margin: 0;
+}
+
+/*merry_christmas.htmlの背景画像*/
+body.merry_christmas {
+  background-image: url("../Picture/Xmas_merrychristmas.jpg"); /*背景画像*/
+  background-size: cover; /*画面サイズに併せて全画面表示*/
+  background-attachment: fixed; /*固定*/
+  background-position: center center; /*縦横中央*/
+  height: 100%; /*画面の横幅いっぱいに範囲選択*/
+  margin: 0;
+}
+
+/*gift.htmlの背景画像*/
+body.gift {
+  background-image: url("../Picture/Xmas_background.jpg"); /*背景画像*/
+  background-size: cover; /*画面サイズに併せて全画面表示*/
+  background-attachment: fixed; /*固定*/
+  background-position: center center; /*縦横中央*/
+  height: 100%; /*画面の横幅いっぱいに範囲選択*/
+  margin: 0;
+}
+
+/*thank_you.htmlの背景画像*/
+body.thank_you {
+  background-image: url("../Picture/Xmas_midnight.jpg"); /*背景画像*/
+  background-size: cover; /*画面サイズに併せて全画面表示*/
+  background-attachment: fixed; /*固定*/
+  background-position: center center; /*縦横中央*/
+  height: 100%; /*画面の横幅いっぱいに範囲選択*/
+  margin: 0;
+}
+
+/*リンクのデザインと位置調整(index.html)*/
+a.link-m-c {
+  font-size: 500%;
+  font-weight: bold;
+  display: inline-block;
+  background: linear-gradient(45deg, #ff0000 20%, #d9ff00 48%, #00fa00 130%);
+  background-size: 300% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientEffect 3.0s infinite alternate;
+}
+@keyframes gradientEffect {
+  from {background-position: left;}
+  to {background-position: right}
+}
+div.div-m-c {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  margin-top: 15%;
+}
+
+/*リンクのデザインと位置調整(merry_christmas.html)*/
+img.gift_box {
+  width: 350px;
+  position: absolute;
+  left: 70px;
+  bottom: 0;
+}
+
+/*リンクのデザインと位置調整(gift.html)*/
+span.link-t-y {
+  font-size: 300%;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 31%;
+}
+span.link-t-y a {
+  color: #00fa00;
+}
+
+/*リンクのデザインと位置調整(thank_you.html)&浮かび上がる文字*/
+span.link-i {
+  /*リンクのデザインと位置調整*/
+  font-size: 550%;
+  font-weight: bolder;
+  display: inline-block;
+  text-align: right;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+span.link-i a {
+  /*文字を浮かび上がらせる*/
+  opacity: 0;
+  animation-name: link-i; /*←@keyframesにも同じ名前を記述*/
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-delay: 2.0s;
+}
+@keyframes link-i { /*←animation-nameにも同じ名前を記述*/
+  0% {
+    opacity: 0;
+    color: aliceblue;
+  }
+  90% {
+    opacity: 1;
+    color: aliceblue;
+  }
+  100% {
+    opacity: 1;
+    color: aliceblue;
+  }
+}
+
+/*文字列の基本情報*/
+p.p-click {
+  color: white;
+  font-size: 250%;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  margin-bottom: -30px;
+}
+p.p-click-g {
+  color: white;
+  font-size: 250%;
+  position: absolute;
+  left: 162px;
+  bottom: 230px;
+}
+
+/*文字と画像の配置順指定*/
+div.message { /*文字列*/
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  text-shadow: 1px 0 5px black;
+}
+div.picture { /*画像*/
+  z-index: 1;
+}
+
+/*画像のサイズや配置(merry_christmas.html)&スライドショー*/
+div.picture_santa img {
+  width: 500px; /*画像の比率を保ったままサイズの変更が可能*/
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1; /*背景の次*/
+}
+/*スライドショー*/
+@keyframes album {
+  0% {
+    opacity: 0;
+  }
+  0.5% {
+    opacity: 1;
+  }
+  9.5% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0;
+  }
+}
+div.picture_santa img {
+  animation-name: album;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  opacity: 0;
+}
+div.picture_santa .hakaze02 {
+  animation-delay: 6s;
+}
+div.picture_santa .hakaze03 {
+  animation-delay: 12s;
+}
+div.picture_santa .hakaze04 {
+  animation-delay: 18s;
+}
+div.picture_santa .hakaze05 {
+  animation-delay: 24s;
+}
+div.picture_santa .hakaze06 {
+  animation-delay: 30s;
+}
+div.picture_santa .hakaze07 {
+  animation-delay: 36s;
+}
+div.picture_santa .hakaze08 {
+  animation-delay: 42s;
+}
+div.picture_santa .hakaze09 {
+  animation-delay: 48s;
+}
+div.picture_santa .hakaze10 {
+  animation-delay: 54s;
+}
+
+/*画像の装飾(gift.html)*/
+img.sweet_gift {
+  /*斜線枠*/
+  content: '';
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 65%;
+  border-image-source: repeating-linear-gradient(45deg, rgb(255, 0, 0), rgb(43, 255, 0) 3px, rgba(0 0 0 / 0) 0, rgba(0 0 0 / 0) 6px);
+	border-image-slice: 20;
+  border-image-outset: 0;
+	border-style: solid;
+	border-width: 20px;
+  /*中央から画像が現れる*/
+  animation: sweet_gift 2s cubic-bezier(.4, 0, .2, 1);
+}
+@keyframes sweet_gift {
+  0% {
+    clip-path: circle(0 at 50% 50%);
+    -webkit-clip-path: circle(0 at 50% 50%);
+  }
+  100% {
+    clip-path: circle(100% at 50% 50%);
+    -webkit-clip-path: circle(100% at 50% 50%);
+  }
+}
+
+/*画像のサイズや配置(thank_you.html)*/
+img.santasann {
+  width: 600px;
+  position: absolute;
+  right: 10%;
+  top: 7%;
+}
+
+/*浮かび上がる文字*/
+p.message01 {
+  font-size: 65px;
+  opacity: 0;
+  animation-name: message01; /*←@keyframesにも同じ名前を記述*/
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+  margin-top: 56.5%;
+  text-align: center;
+}
+@keyframes message01 { /*←animation-nameにも同じ名前を記述*/
+  0% {
+    opacity: 0;
+    color: rgb(255, 253, 253);
+  }
+  90% {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+  }
+  100% {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+  }
+}
+p.message02 {
+  font-size: 50px;
+  opacity: 0;
+  animation-name: message02; /*←@keyframesにも同じ名前を記述*/
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-delay: 1.95s;
+  margin-top: -45px;
+  text-align: center;
+}
+@keyframes message02 { /*←animation-nameにも同じ名前を記述*/
+  0% {
+    opacity: 0;
+    color: rgb(255, 253, 253);
+  }
+  90% {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+  }
+  100% {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+  }
+}
+p.message03 {
+  font-size: 50px;
+  opacity: 0;
+  animation-name: message03; /*←@keyframesにも同じ名前を記述*/
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-delay: 4.0s;
+  margin-top: -55px;
+  text-align: center;
+}
+@keyframes message03 { /*←animation-nameにも同じ名前を記述*/
+  0% {
+    opacity: 0;
+    color: rgb(255, 253, 253);
+  }
+  90% {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+  }
+  100% {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+  }
+}
+p.message04 {
+  font-size: 50px;
+  opacity: 0;
+  animation-name: message04; /*←@keyframesにも同じ名前を記述*/
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-delay: 6.25s;
+  margin-top: -55px;
+  text-align: center;
+}
+@keyframes message04 { /*←animation-nameにも同じ名前を記述*/
+  0% {
+    opacity: 0;
+    color: rgb(255, 253, 253);
+  }
+  90% {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+  }
+  100% {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+  }
+}
+p.message05 {
+  font-size: 50px;
+  opacity: 0;
+  animation-name: message05; /*←@keyframesにも同じ名前を記述*/
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-delay: 7.90s;
+  margin-top: -55px;
+  text-align: center;
+}
+@keyframes message05 { /*←animation-nameにも同じ名前を記述*/
+  0% {
+    opacity: 0;
+    color: rgb(255, 253, 253);
+  }
+  90% {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+  }
+  100% {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+  }
+}
+p.message06 {
+  font-size: 50px;
+  opacity: 0;
+  animation-name: message06; /*←@keyframesにも同じ名前を記述*/
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-delay: 10.25s;
+  margin-top: -55px;
+  text-align: center;
+}
+@keyframes message06 { /*←animation-nameにも同じ名前を記述*/
+  0% {
+    opacity: 0;
+    color: rgb(255, 253, 253);
+  }
+  90% {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+  }
+  100% {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+  }
+}
+p.message07 {
+  font-size: 50px;
+  opacity: 0;
+  animation-name: message07; /*←@keyframesにも同じ名前を記述*/
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-delay: 12.5s;
+  margin-top: -55px;
+  text-align: center;
+}
+@keyframes message07 { /*←animation-nameにも同じ名前を記述*/
+  0% {
+    opacity: 0;
+    color: rgb(255, 253, 253);
+  }
+  90% {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+  }
+  100% {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+  }
+}
+p.message08 {
+  font-size: 50px;
+  opacity: 0;
+  animation-name: message08; /*←@keyframesにも同じ名前を記述*/
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-delay: 14.5s;
+  margin-top: -35px;
+  text-align: center;
+}
+@keyframes message08 { /*←animation-nameにも同じ名前を記述*/
+  0% {
+    opacity: 0;
+    color: rgb(255, 253, 253);
+  }
+  90% {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+  }
+  100% {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+  }
+}
