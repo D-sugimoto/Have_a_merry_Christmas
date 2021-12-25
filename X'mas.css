@@ -218,17 +218,17 @@ img.sweet_gift {
   position: absolute;
   top: 45%;
   left: 50%;
-/*   transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 65%;
   border-image-source: repeating-linear-gradient(45deg, rgb(255, 0, 0), rgb(43, 255, 0) 3px, rgba(0 0 0 / 0) 0, rgba(0 0 0 / 0) 6px);
 	border-image-slice: 20;
   border-image-outset: 0;
 	border-style: solid;
-	border-width: 20px; */
+	border-width: 20px;
   /*中央から画像が現れる処理*/
-/*   animation: sweet_gift 2s cubic-bezier(.4, 0, .2, 1); */
+  animation: sweet_gift 2s cubic-bezier(.4, 0, .2, 1);
 }
-/* @keyframes sweet_gift {
+@keyframes sweet_gift {
   0% {
     clip-path: circle(0 at 50% 50%);
     -webkit-clip-path: circle(0 at 50% 50%);
@@ -237,7 +237,7 @@ img.sweet_gift {
     clip-path: circle(100% at 50% 50%);
     -webkit-clip-path: circle(100% at 50% 50%);
   }
-} */
+}
 
 /*画像のサイズや配置(thank_you.html)*/
 img.santasann {
