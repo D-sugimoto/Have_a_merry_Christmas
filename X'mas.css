@@ -167,19 +167,19 @@ div.picture_santa img {
   0% {
     opacity: 0;
   }
-  0.5% {
+  1% {
     opacity: 1;
   }
-  9.5% {
+  19% {
     opacity: 1;
   }
-  10% {
+  20% {
     opacity: 0;
   }
 }
 div.picture_santa img {
   animation-name: album;
-  animation-duration: 60s;
+  animation-duration: 30s;
   animation-iteration-count: infinite;
   opacity: 0;
 }
@@ -195,7 +195,7 @@ div.picture_santa .hakaze04 {
 div.picture_santa .hakaze05 {
   animation-delay: 24s;
 }
-div.picture_santa .hakaze06 {
+/* div.picture_santa .hakaze06 {
   animation-delay: 30s;
 }
 div.picture_santa .hakaze07 {
@@ -209,7 +209,7 @@ div.picture_santa .hakaze09 {
 }
 div.picture_santa .hakaze10 {
   animation-delay: 54s;
-}
+} */
 
 /*画像の装飾(gift.html)*/
 img.sweet_gift {
@@ -255,7 +255,7 @@ p.message01 {
   animation-duration: 4s;
   animation-fill-mode: forwards;
   animation-delay: 0.5s;
-  margin-top: 30%;
+  margin-top: 35%;
   text-align: center;
 }
 @keyframes message01 { /*←animation-nameにも同じ名前を記述*/
