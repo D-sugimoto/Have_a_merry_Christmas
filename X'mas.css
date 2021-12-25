@@ -162,7 +162,7 @@ div.picture_santa img {
   bottom: 0;
   z-index: 1; /*背景の次*/
 }
-/*スライドショー処理*/
+/*スライドショー*/
 @keyframes album {
   0% {
     opacity: 0;
