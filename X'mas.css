@@ -163,7 +163,7 @@ div.picture_santa img {
   z-index: 1; /*背景の次*/
 }
 /*スライドショー*/
-@keyframes album {
+/* @keyframes album {
   0% {
     opacity: 0;
   }
@@ -209,7 +209,7 @@ div.picture_santa .hakaze09 {
 }
 div.picture_santa .hakaze10 {
   animation-delay: 54s;
-}
+}*/
 
 /*画像の装飾(gift.html)*/
 img.sweet_gift {
