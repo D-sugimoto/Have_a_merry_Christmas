@@ -10,7 +10,7 @@ a {
 
 /*index.htmlの背景画像*/
 body.transition {
-  background-image: url("../Picture/Xmas_login.gif"); /*背景画像*/
+  background-image: url("https://D-sugimoto.github.io/Have_a_merry_Christmas/Xmas_login.gif"); /*背景画像*/
   background-size: cover; /*画面サイズに併せて全画面表示*/
   background-attachment: fixed; /*固定*/
   background-position: center center; /*縦横中央*/
@@ -20,7 +20,7 @@ body.transition {
 
 /*merry_christmas.htmlの背景画像*/
 body.merry_christmas {
-  background-image: url("../Picture/Xmas_merrychristmas.jpg"); /*背景画像*/
+  background-image: url("https://D-sugimoto.github.io/Have_a_merry_Christmas/Xmas_merrychristmas.jpg"); /*背景画像*/
   background-size: cover; /*画面サイズに併せて全画面表示*/
   background-attachment: fixed; /*固定*/
   background-position: center center; /*縦横中央*/
@@ -30,7 +30,7 @@ body.merry_christmas {
 
 /*gift.htmlの背景画像*/
 body.gift {
-  background-image: url("../Picture/Xmas_background.jpg"); /*背景画像*/
+  background-image: url("https://D-sugimoto.github.io/Have_a_merry_Christmas/Xmas_background.jpg"); /*背景画像*/
   background-size: cover; /*画面サイズに併せて全画面表示*/
   background-attachment: fixed; /*固定*/
   background-position: center center; /*縦横中央*/
@@ -40,7 +40,7 @@ body.gift {
 
 /*thank_you.htmlの背景画像*/
 body.thank_you {
-  background-image: url("../Picture/Xmas_midnight.jpg"); /*背景画像*/
+  background-image: url("https://D-sugimoto.github.io/Have_a_merry_Christmas/Xmas_midnight.jpg"); /*背景画像*/
   background-size: cover; /*画面サイズに併せて全画面表示*/
   background-attachment: fixed; /*固定*/
   background-position: center center; /*縦横中央*/
