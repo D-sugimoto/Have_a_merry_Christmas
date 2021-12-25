@@ -225,7 +225,7 @@ img.sweet_gift {
   border-image-outset: 0;
 	border-style: solid;
 	border-width: 20px;
-  /*中央から画像が現れる*/
+  /*中央から画像が現れる処理*/
   animation: sweet_gift 2s cubic-bezier(.4, 0, .2, 1);
 }
 @keyframes sweet_gift {
